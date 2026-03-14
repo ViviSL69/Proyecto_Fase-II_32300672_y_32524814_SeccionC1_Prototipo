@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero - Cafetín Central</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Cafetín Central</a>
+                <span class="ucv">UCV</span>
+            </div>
+
+            <div class="header-right">
+                <div class="usuario-info">
+                    <span class="usuario-label">Cajero01</span>
+                    <span class="usuario-nombre">(CAJERO)</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="cerrar-sesion">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="columna-izquierda">
+            <section class="catalogo-section">
+                <h2>Catálogo del Cafetín</h2>
+                <div id="productos" class="catalogo-grid"></div>
+            </section>
+        </div>
+
+        <div class="columna-derecha">
+            <section class="carrito-section">
+                <h2>Pedido Actual</h2>
+                <ul id="pedido" class="carrito-lista"></ul>
+
+                <div class="carrito-resumen">
+                    <p class="carrito-contador">
+                        Total: $<span id="total" class="carrito-total">0.00</span>
+                    </p>
+                    <button onclick="emitirRecibo()" class="btn-pagar">Emitir Recibo</button>
+                    <p id="mensaje" class="mensaje-pago" style="display: none;"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Cafetín Central - Universidad Central de Venezuela. Proyecto Académico</p>
+    </footer>
+
+    <script src="./js/productos.js"></script>
+    <script src="./js/cajero.js"></script>
+</body>
+</html>
