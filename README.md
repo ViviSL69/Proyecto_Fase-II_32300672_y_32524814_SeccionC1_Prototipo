@@ -6,6 +6,6 @@ Cajero:
 Usuario: caja_01  
 Contraseña: Cajero#123
 
-Administrador
+Administrador:
 Usuario: adminRoot  
 Contraseña: cafetinAdmin
