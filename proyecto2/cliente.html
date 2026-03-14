@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetín Central</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Cafetín Central</a>
+            <span class="ucv">UCV</span>
+        </div>
+
+        <div class="header-right">
+            <div class="usuario-info">
+                <span class="usuario-label">Usuario</span>
+                <span class="usuario-nombre">(CLIENTE)</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="cerrar-sesion">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="dashboard">
+    <div class="columna-izquierda">
+        <section class="catalogo-section">
+            <h2>Catálogo del Cafetín</h2>
+            <div id="catalogo" class="catalogo-grid"></div>
+        </section>
+    </div>
+
+    <div class="columna-derecha">
+        <section class="lealtad-section">
+            <h2>Mi Lealtad</h2>
+            <div class="lealtad-contenido">
+                <div class="puntos-display">
+                    <div class="puntos-info">
+                        <span class="puntos-label">Puntos acumulados</span>
+                        <span class="puntos-numero">150</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carrito-section">
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito" class="carrito-lista"></ul>
+
+            <div class="carrito-resumen">
+                <p class="carrito-contador">
+                    Carrito (<span id="contador">0</span>)
+                </p>
+                <p class="carrito-total">
+                    Total: $<span id="total">0.00</span>
+                </p>
+                <button onclick="pagar()" class="btn-pagar">Pagar</button>
+                <p id="mensaje" class="mensaje-pago"></p>
+            </div>
+        </section>
+
+
+<section class="historial-section">
+    <h2>Historial de Compras</h2>
+    <div class="historial-contenedor">
+       
+    </div>
+</section>
+    </div>
+</main>
+
+<footer>
+    <p>Cafetín Central - Universidad Central de Venezuela. Proyecto Académico</p>
+</footer>
+
+<script src="./js/productos.js"></script>
+<script src="./js/historial.js"></script>
+<script src="./js/cliente.js"></script>
+
+</body>
+</html>
