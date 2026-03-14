@@ -3,7 +3,7 @@ const productos =[
         id: 1,
         nombre: "Café Negro",
         precio: 1.00,
-        imagen: "imagenes/cafe.png"
+        imagen: "../imagenes/cafe.png"
     },
      {
         id: 2,
