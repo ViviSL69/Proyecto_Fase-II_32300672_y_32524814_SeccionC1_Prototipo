@@ -1,10 +1,10 @@
 Cliente:
-Usuario: ClienteUCV 
+Usuario: ClienteUCV  
 Contraseña: Central_123
 
 Cajero:
 
-Usuario: caja_01
+Usuario: caja_01  
 Contraseña: Cajero#123
 
 Administrador
